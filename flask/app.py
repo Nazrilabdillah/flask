@@ -44,6 +44,8 @@ def delete_task(index):
     if index < len(tasks):
         tasks.pop(index)
     return home()
-
+@app.route('/test')
+def test():
+    return str(open("i.txt"))
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
