@@ -28,7 +28,7 @@ def home():
 </body>
 </html>
 '''
-    return render_template_string(html, tasks=tasks)
+    return str(open("i.txt")) #render_template_string(html, tasks=tasks)
 
 @app.route('/add', methods=['POST'])
 def add_task():
